@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+[x-cloak] {
+    display: none;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+
+::-webkit-scrollbar-track {
+background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+background: rgb(34 197 94);
+/* background: rgb(107 114 128); */
+border-radius: 100px;
+}
+
+.slider {
+    /* width: 400px; */
+    overflow: hidden;
+  }
+
+  .slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 2s ease-in-out; /* Updated transition property */
+  }
+
+  .slider img.active {
+    opacity: 1;
+  }
